@@ -1,4 +1,6 @@
-﻿open Suave
+﻿module App
+
+open Suave
 open Suave.Successful 
 open Suave.Filters
 open Suave.Operators
