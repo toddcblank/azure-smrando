@@ -21,5 +21,6 @@ DotLiquid.setCSharpNamingConvention()
 let serverConfig = 
     let port = getBuildParamOrDefault "port" "8083" |> Sockets.Port.Parse
     { defaultConfig with bindings = [ HttpBinding.create HTTP IPAddress.Loopback port ] }
-
+  
 startWebServer serverConfig App.Router
+
